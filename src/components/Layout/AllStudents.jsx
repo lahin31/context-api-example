@@ -15,9 +15,6 @@ class AllStudents extends Component {
             <Consumer>
                 { value => {
                     const { students, dispatch } = value
-                    if(students === undefined || students.length === 0) {
-
-                    } else {
                         return (
                             <React.Fragment>
                                 <table className="table table-bordered">
@@ -52,7 +49,6 @@ class AllStudents extends Component {
                                 </table>
                             </React.Fragment>
                         )
-                    }
                 }}
             </Consumer>
             
