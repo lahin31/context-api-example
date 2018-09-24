@@ -25,9 +25,11 @@ class AddForm extends Component {
             type: "ADD_STUDENT",
             payload: res_obj
         })
-        this.state.id = "";
-        this.state.name = "";
-        this.state.email = "";
+        this.setState({
+            id: "",
+            name: "",
+            email: ""
+        })
     }
     render() { 
         return ( 
